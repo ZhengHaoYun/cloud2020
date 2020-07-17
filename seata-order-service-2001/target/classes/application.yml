@@ -18,7 +18,6 @@ spring:
     username: root
     password: root
 
-
 feign:
   hystrix:
     enabled: false
