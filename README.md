@@ -3,4 +3,6 @@
 1. H版
 2. Alibaba版
 
-> 学习视频来源于：尚硅谷周阳老师的springcloud第二季
+> 学习视频来源于：
+
+尚硅谷周阳老师的springcloud第二季
