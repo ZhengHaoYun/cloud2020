@@ -49,7 +49,7 @@ public class FlowLimitController {
     @SentinelResource(value = "testHotKey", blockHandler = "deal_testHotKey")
     public String testHotKey(@RequestParam(value = "p1", required = false) String p1,
                              @RequestParam(value = "p2", required = false) String p2) {
-        //int age = 10/0;
+//        int age = 10/0;
         return "------testHotKey";
     }
 
@@ -57,5 +57,17 @@ public class FlowLimitController {
     public String deal_testHotKey(String p1, String p2, BlockException exception) {
         return "------deal_testHotKey,o(╥﹏╥)o";  //sentinel系统默认的提示：Blocked by Sentinel (flow limiting)
     }
+
+    @GetMapping("/testBlockHandler")
+    @SentinelResource(value = "testBlockHandler", blockHandler = "test")
+    public String testBlockHandler() {
+        int age = 10 / 0;
+        return "测试lockHandler可不可以处理异常";
+    }
+
+    public String test(BlockException exception) {
+        return "我处理了！";
+    }
+
 
 }
