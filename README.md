@@ -6,5 +6,3 @@
 > 学习视频来源于：
 
 尚硅谷周阳老师的springcloud第二季
-
-![image-20200721183500774](https://zhenghaoyun.oss-cn-beijing.aliyuncs.com/img/20200721183500.png)
